@@ -1,0 +1,197 @@
+body
+{
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+section
+{
+    position: relative;
+    animation: rotation;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+div:nth-of-type(1)
+{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    animation: rotations;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+div:nth-of-type(2)
+{
+    width: 100px;
+    height: 100px;
+    background-color: #d000ff;
+    border-radius: 50%;
+    animation: rotations;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 0.5s;
+    position: absolute;
+    top: 0; 
+}
+
+div:nth-of-type(3)
+{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+    animation: rotations;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 1s;
+    position: absolute;
+    top: 0; 
+}
+
+div:nth-of-type(4)
+{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(26, 255, 0);
+    border-radius: 50%;
+    animation: rotations;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 1.5s;
+    position: absolute;
+    top: 0; 
+}
+
+
+@keyframes rotations
+{
+    0%
+    {
+        transform: translate(0px, 0px);
+    }
+
+    25%
+    {
+        transform: translate(400px, 0px);
+    }
+
+    50%
+    {
+        transform: translate(400px, 400px);
+    }
+
+    75%
+    {
+        transform: translate(0px, 400px);
+    }
+
+    100%
+    {
+        transform: translate(0px, 0px);
+    }
+
+}
+
+@keyframes rotation
+{
+    0%
+    {
+        transform: translate(0px, 20vh);
+    }
+
+    25%
+    {
+        transform: translate(15vw, 20vh);
+    }
+
+    50%
+    {
+        transform: translate(30vw, 20vh);
+    }
+
+    75%
+    {
+        transform: translate(45vw, 20vh);
+    }
+
+    100%
+    {
+        transform: translate(60vw, 20vh);
+    }
+}
+
+/* ######### KEYFRAMES GROUP TWO ########### */
+
+
+@keyframes rotations
+{
+    0%
+    {
+        transform: translate(0, 0px);
+    }
+
+    25%
+    {
+        transform: translate(400px, 0px);
+    }
+
+    50%
+    {
+        transform: translate(400px, 400px);
+    }
+
+    75%
+    {
+        transform: translate(0px, 400px);
+    }
+
+    100%
+    {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes rotation_group_one
+{
+    0%
+    {
+        transform: translate(0px, 20vh);
+    }
+
+    25%
+    {
+        transform: translate(15vw, 20vh);
+    }
+
+    50%
+    {
+        transform: translate(30vw, 20vh);
+    }
+
+    75%
+    {
+        transform: translate(45vw, 20vh);
+    }
+
+    100%
+    {
+        transform: translate(60vw, 20vh);
+    }
+}
