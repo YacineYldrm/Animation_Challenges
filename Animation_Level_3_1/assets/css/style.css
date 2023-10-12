@@ -21,7 +21,7 @@ div:nth-of-type(1)
 {
     width: 100px;
     height: 100px;
-    background-color: blue;
+    background-color: #d000ff;
     border-radius: 50%;
     position: absolute;
     animation: rotations;
@@ -35,7 +35,7 @@ div:nth-of-type(2)
 {
     width: 100px;
     height: 100px;
-    background-color: #d000ff;
+    background-color: blue;
     border-radius: 50%;
     animation: rotations;
     animation-duration: 2s;
@@ -67,7 +67,7 @@ div:nth-of-type(4)
 {
     width: 100px;
     height: 100px;
-    background-color: rgb(26, 255, 0);
+    background-color: rgb(7, 109, 0);
     border-radius: 50%;
     animation: rotations;
     animation-duration: 2s;
@@ -82,93 +82,33 @@ div:nth-of-type(4)
 
 @keyframes rotations
 {
-    0%
+    0%, 100%
     {
         transform: translate(0px, 0px);
+        background-color: #d000ff;
     }
 
     25%
     {
         transform: translate(400px, 0px);
+        background-color: blue;
     }
 
     50%
     {
         transform: translate(400px, 400px);
+        background-color: rgb(255, 0, 0);
     }
 
     75%
     {
         transform: translate(0px, 400px);
-    }
-
-    100%
-    {
-        transform: translate(0px, 0px);
+        background-color: rgb(7, 109, 0);
     }
 
 }
 
 @keyframes rotation
-{
-    0%
-    {
-        transform: translate(0px, 20vh);
-    }
-
-    25%
-    {
-        transform: translate(15vw, 20vh);
-    }
-
-    50%
-    {
-        transform: translate(30vw, 20vh);
-    }
-
-    75%
-    {
-        transform: translate(45vw, 20vh);
-    }
-
-    100%
-    {
-        transform: translate(60vw, 20vh);
-    }
-}
-
-/* ######### KEYFRAMES GROUP TWO ########### */
-
-
-@keyframes rotations
-{
-    0%
-    {
-        transform: translate(0, 0px);
-    }
-
-    25%
-    {
-        transform: translate(400px, 0px);
-    }
-
-    50%
-    {
-        transform: translate(400px, 400px);
-    }
-
-    75%
-    {
-        transform: translate(0px, 400px);
-    }
-
-    100%
-    {
-        transform: translate(0px, 0px);
-    }
-}
-
-@keyframes rotation_group_one
 {
     0%
     {
